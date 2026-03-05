@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Persian Carpet Luxury</title>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+body{color:#333;line-height:1.6;}
+
+/* Fading backgrounds animation */
+@keyframes fadeBG{
+  0%{background-position:0% 50%;}
+  50%{background-position:100% 50%;}
+  100%{background-position:0% 50%;}
+}
+
+/* Navigation */
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 8%;
+  background:linear-gradient(90deg,#4a2e1f,#6b4229,#8b5e3c);
+  color:white;
+  border-radius:0 0 25px 25px;
+  font-weight:600;
+}
+nav .logo{
+  font-family:'Merriweather', serif;
+  font-size:28px;
+  font-weight:700;
+  background:linear-gradient(90deg,#ffd700,#ffb84d,#ffe85c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+nav a{
+  margin-left:20px;
+  text-decoration:none;
+  color:white;
+  padding:8px 15px;
+  border-radius:20px;
+  transition:0.3s;
+}
+nav a:hover{
+  background:#ffd700;color:#4a2e1f;transform:scale(1.1);
+}
+
+/* Hero Section */
+.hero{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  padding:80px 8%;
+  gap:30px;
+  background:linear-gradient(135deg,#f8e5d4,#d9bfa5,#eae1d7,#ffd699,#ffe0b3);
+  background-size:400% 400%;
+  animation:fadeBG 20s ease infinite;
+  text-align:center;
+}
+.hero-text h1{
+  font-family:'Merriweather', serif;
+  font-size:56px;
+  margin-bottom:15px;
+  background:linear-gradient(90deg,#ffd700,#ff8c00,#ffb84d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.hero-text p{
+  font-size:20px;
+  margin-bottom:20px;
+  color:#5b3c2b;
+}
+.button{
+  background:#4a2e1f;
+  color:#ffd700;
+  padding:14px 32px;
+  border-radius:50px;
+  font-weight:700;
+  text-decoration:none;
+  transition:all 0.3s;
+}
+.button:hover{transform:scale(1.1);background:#6b4229;}
+
+/* Sections */
+section{padding:80px 8%;}
+
+/* Card styles */
+.card{
+  background:linear-gradient(145deg,#ffd699,#ffe0b3,#f8e5d4,#ffeebb);
+  border-radius:25px;
+  padding:40px;
+  box-shadow:0 15px 40px rgba(0,0,0,0.15);
+  margin-bottom:40px;
+  transition:transform 0.4s,box-shadow 0.4s;
+}
+.card:hover{transform:scale(1.02);box-shadow:0 20px 50px rgba(0,0,0,0.2);}
+.card h2{
+  font-family:'Merriweather', serif;
+  font-size:38px;
+  margin-bottom:20px;
+  background:linear-gradient(90deg,#ffd700,#ff8c00,#ffb84d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.card p{font-size:16px;color:#5b3c2b;}
+
+/* Carpet types gallery (colorful blocks instead of images) */
+.types-gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+  gap:20px;
+  margin-top:30px;
+}
+.type-block{
+  padding:40px 20px;
+  border-radius:20px;
+  font-weight:700;
+  text-align:center;
+  color:white;
+  font-size:18px;
+  background:linear-gradient(135deg,#ff8c00,#ffd700,#ffb84d,#ffcc66);
+  transition:transform 0.4s, box-shadow 0.4s;
+}
+.type-block:hover{transform:scale(1.05);box-shadow:0 10px 25px rgba(0,0,0,0.2);}
+
+/* Features */
+.features{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:30px;
+  margin-top:30px;
+}
+.feature{
+  background:linear-gradient(135deg,#ffcc99,#ffddaa,#ffeebb);
+  padding:25px;
+  border-radius:20px;
+  text-align:center;
+  transition:transform 0.4s,box-shadow 0.4s;
+}
+.feature:hover{transform:translateY(-8px);box-shadow:0 10px 25px rgba(0,0,0,0.2);}
+.feature h3{margin-bottom:10px;color:#4a2e1f;font-size:22px;}
+.feature p{font-size:16px;color:#5b3c2b;}
+
+/* Footer */
+footer{
+  background:#4a2e1f;
+  color:#ffd700;
+  padding:30px 8%;
+  text-align:center;
+  font-size:14px;
+}
+
+/* Responsive */
+@media(max-width:768px){
+  .hero-text h1{font-size:42px;}
+  .card h2{font-size:32px;}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">Persian Carpet Luxury</div>
+  <div>
+    <a href="#history">History</a>
+    <a href="#types">Types</a>
+    <a href="#features">Features</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <div class="hero-text">
+    <h1>Luxury Persian Carpets</h1>
+    <p>Discover the unmatched craftsmanship, colors, and tradition of Persian carpets. Every type is unique and luxurious.</p>
+    <a href="#types" class="button">Explore Types</a>
+  </div>
+</div>
+
+<section id="history">
+  <div class="card">
+    <h2>🕰 History</h2>
+    <p>Persian carpets have been woven for thousands of years. Each region has unique patterns, colors, and weaving techniques, making them timeless treasures of culture and art.</p>
+  </div>
+</section>
+
+<section id="types">
+  <div class="card">
+    <h2>🏛 Carpet Types</h2>
+    <div class="types-gallery">
+      <div class="type-block">Tabriz</div>
+      <div class="type-block">Isfahan</div>
+      <div class="type-block">Qom</div>
+      <div class="type-block">Kashan</div>
+      <div class="type-block">Nain</div>
+      <div class="type-block">Kerman</div>
+    </div>
+  </div>
+</section>
+
+<section id="features">
+  <div class="card">
+    <h2>✨ Craftsmanship Features</h2>
+    <div class="features">
+      <div class="feature">
+        <h3>Handwoven Excellence</h3>
+        <p>Each carpet is handwoven by skilled artisans, ensuring unmatched quality and longevity.</p>
+      </div>
+      <div class="feature">
+        <h3>Rich Patterns</h3>
+        <p>Timeless motifs inspired by Persian culture, nature, and architecture.</p>
+      </div>
+      <div class="feature">
+        <h3>Premium Materials</h3>
+        <p>High-quality wool, silk, and natural dyes for vibrant, lasting colors.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 Persian Carpet Luxury. All Rights Reserved.
+</footer>
+
+</body>
+</html>
